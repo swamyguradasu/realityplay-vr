@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-vr-red: #ff2a4b;
+    --color-vr-red-glow: rgba(255, 42, 75, 0.65);
+    --color-vr-red-dim: rgba(255, 42, 75, 0.2);
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #030508;
+    color: #f3f4f6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    overscroll-behavior: none;
+  }
+}
+
+.font-hud {
+  font-family: 'Chakra Petch', monospace, system-ui, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+/* VR Eyepiece barrel vignette & curvature */
+.vr-eye-mask {
+  position: relative;
+  overflow: hidden;
+  border-radius: 42px;
+  box-shadow: inset 0 0 40px 10px rgba(0, 0, 0, 0.85);
+}
+
+.vr-vignette {
+  background: radial-gradient(
+    circle at center,
+    transparent 55%,
+    rgba(3, 5, 8, 0.4) 75%,
+    rgba(2, 4, 7, 0.95) 100%
+  );
+  pointer-events: none;
+}
+
+/* Subtle HUD glow */
+.hud-glow {
+  text-shadow: 0 0 10px rgba(255, 42, 75, 0.75), 0 0 20px rgba(255, 42, 75, 0.4);
+}
+
+.hud-box-glow {
+  box-shadow: 0 0 15px rgba(255, 42, 75, 0.25), inset 0 0 10px rgba(255, 42, 75, 0.15);
+}
+
+/* Reticle pulsing ring animation */
+@keyframes reticlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-reticle-pulse {
+  animation: reticlePulse 2.4s ease-in-out infinite;
+}

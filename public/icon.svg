@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="128" fill="#030508" />
+  <circle cx="256" cy="256" r="180" stroke="#ff2a4b" stroke-width="8" stroke-dasharray="16 12" fill="none" opacity="0.4" />
+  <circle cx="256" cy="256" r="140" stroke="#ff2a4b" stroke-width="12" fill="none" opacity="0.8" />
+  <circle cx="256" cy="256" r="90" stroke="#ffffff" stroke-width="8" fill="none" opacity="0.9" />
+  <circle cx="256" cy="256" r="40" fill="#ff2a4b" />
+  <circle cx="256" cy="256" r="16" fill="#ffffff" />
+  <!-- Reticle Cardinal Crosshairs -->
+  <line x1="256" y1="40" x2="256" y2="80" stroke="#ff2a4b" stroke-width="12" stroke-linecap="round" />
+  <line x1="256" y1="432" x2="256" y2="472" stroke="#ff2a4b" stroke-width="12" stroke-linecap="round" />
+  <line x1="40" y1="256" x2="80" y2="256" stroke="#ff2a4b" stroke-width="12" stroke-linecap="round" />
+  <line x1="432" y1="256" x2="472" y2="256" stroke="#ff2a4b" stroke-width="12" stroke-linecap="round" />
+</svg>

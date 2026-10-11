@@ -1,0 +1,7 @@
+{
+  "name": "RealityPlay VR",
+  "description": "Mobile camera-based dual-eye VR target practice game with device orientation aiming and futuristic headset HUD.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
